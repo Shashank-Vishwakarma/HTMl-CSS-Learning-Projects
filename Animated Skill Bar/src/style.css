@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(205, 207, 212);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    min-height: 10px;
+    max-height: 600px;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.skill {
+    width: 90%;
+    margin: 5px;
+    padding: 15px;
+}
+
+.skill .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 4px;
+}
+
+.skill .header .title {
+    position: absolute;
+    left: 20px;
+    font-weight: bold;
+}
+
+.skill .header .html-percent-box, .css-percent-box, .js-percent-box, .node-percent-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(49, 107, 215);
+    width: 50px;
+    height: 15px;
+    position: absolute;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.skill .header .html-percent-box {
+    right: 57px;
+}
+
+.skill .header .css-percent-box {
+    right: 157px;
+}
+
+.skill .header .js-percent-box {
+    right: 256px;
+}
+
+.skill .header .node-percent-box {
+    right: 354px;
+}
+
+.skill .header .html-triangle, .css-triangle, .js-triangle, .node-triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(49, 107, 215);
+    position: absolute;
+    top: 20px;
+}
+
+.skill .header .html-triangle {
+    right: 73.5px;
+}
+
+.skill .header .css-triangle {
+    right: 173.5px;
+}
+
+.skill .header .js-triangle {
+    right: 273px;
+}
+
+.skill .header .node-triangle {
+    right: 372px;
+}
+
+.skill .html-progress-bar, .css-progress-bar, .js-progress-bar, .node-progress-bar {
+    width: 90%;
+    min-height: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(211, 215, 223);
+    background-color: rgb(211, 215, 223);
+    border-radius: 40px;
+}
+
+.skill .html-progress-bar .html-inside, .css-progress-bar .css-inside, 
+.js-progress-bar .js-inside, .node-progress-bar .node-inside {
+    background-color: rgb(49, 107, 215);
+    min-height: 15px;
+    border-radius: 40px;
+}
+
+.skill .html-progress-bar .html-inside {
+    width: 90%;
+}
+
+.skill .css-progress-bar .css-inside {
+    width: 70%;
+}
+
+.skill .js-progress-bar .js-inside {
+    width: 50%;
+}
+
+.skill .node-progress-bar .node-inside {
+    width: 30%;
+}
